@@ -4,7 +4,7 @@
 using namespace std;
 int main(){
     typedef map<string,int>maptype;
-    maptype popmap;
+    map<string,int> popmap;
     popmap.insert(pair<string,int>("MH",10000000));
     popmap.insert(pair<string,int>("TN",9000000));
     popmap.insert(pair<string,int>("GA",900000));
@@ -12,7 +12,7 @@ int main(){
     popmap.insert(pair<string,int>("AP",6700000));
     popmap.insert(pair<string,int>("TN",294867000));
 
-    maptype :: iterator iter;
+    map<string,int> :: iterator iter;
     char name[30];
     while(true){
         cout<<"enter state name :";
