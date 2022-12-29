@@ -24,5 +24,5 @@ int main(){
 
         }
         else{
-           cout<<"not found !!!!! u son of bitch###@";
+           cout<<"not found !!!";
         }
