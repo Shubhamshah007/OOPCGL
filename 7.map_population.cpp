@@ -3,7 +3,6 @@
 #include<string>
 using namespace std;
 int main(){
-    typedef map<string,int>maptype;
     map<string,int> popmap;
     popmap.insert(pair<string,int>("MH",10000000));
     popmap.insert(pair<string,int>("TN",9000000));
