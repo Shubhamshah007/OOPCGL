@@ -1,41 +1,19 @@
-#include<iostream>
-#include<map>
-#include<string>
+#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-int main(){
-    typedef map<string,int>maptype;
-    maptype popmap;
-    popmap.insert(pair<string,int>("MH",10000000));
-    popmap.insert(pair<string,int>("TN",9000000));
-    popmap.insert(pair<string,int>("GA",900000));
-    popmap.insert(pair<string,int>("TS",1343200000));
-    popmap.insert(pair<string,int>("AP",6700000));
-    popmap.insert(pair<string,int>("TN",294867000));
-
-    maptype :: iterator iter;
-    char name[30];
-    while(true){
-        cout<<"enter state name :";
-        cin>>name;
-        iter =popmap.find(name);
-
-        if(iter!=popmap.end()){
-            cout<<iter->second<<endl;
-
-        }
-        else{
-            cout<<"not found !!!!!";
-        }
-            char o;
- cout<<"do u wanna continueee??? (Y/N)"<<endl;
-            cin>>o;
-            if(o=='N'){
-                break;
-
-            }
-            else if(o=='Y'){
-                continue;
-            }
-    }
-    return 0;
+int main() {
+    string name;
+    map<string,int> m;
+    m["Rajasthan "]=165685656;
+    m["Karnataka"]=25456;
+    m["Punjab"]=64676;
+    m["Goa"]=64673;
+    map<string,int>::iterator it;
+    cout<<"Enter the name of the state:";
+    cin>>name;
+    it=m.find(name);
+    if(it!=m.end())
+    cout<<it->second;
+    else
+    cout<<"element not found";
 }
