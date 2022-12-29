@@ -6,11 +6,11 @@ using namespace std;
 int main(){
 
     char ch;
-    fstream file;
+    ofstream file;
     file.open("sample1.txt", ios::out);
     file<<"welcome to the world of programming" ;
     file.close();
-
+    ifstream file;
     file.open("sample1.txt",ios::in);
     string line;
     while( getline(file,line)){
