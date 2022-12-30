@@ -3,7 +3,8 @@
 #include<string>
 using namespace std;
 int main(){
-    map<string,int> popmap;
+    typedef map<string,int>maptype;
+    maptype popmap;
     popmap.insert(pair<string,int>("MH",10000000));
     popmap.insert(pair<string,int>("TN",9000000));
     popmap.insert(pair<string,int>("GA",900000));
@@ -11,7 +12,7 @@ int main(){
     popmap.insert(pair<string,int>("AP",6700000));
     popmap.insert(pair<string,int>("TN",294867000));
 
-    map<string,int> :: iterator iter;
+    maptype :: iterator iter;
     char name[30];
     while(true){
         cout<<"enter state name :";
@@ -23,5 +24,17 @@ int main(){
 
         }
         else{
-           cout<<"not found !!!";
+            cout<<"not found !";
         }
+            char o;
+            cout<<"do u wanna continueee??? (Y/N)"<<endl;
+            cin>>o;
+   if(o=='N'){
+                break;
+
+            }
+            else if(o=='Y'){
+                continue;
+            }
+    }
+}
